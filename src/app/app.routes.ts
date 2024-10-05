@@ -21,6 +21,9 @@ export const routes: Routes = [
                 path: 'contacto',
                 loadComponent: () => import('./paginas/contacto/contacto.component')
             },{
+                path: 'iniciar-sesion',
+                loadComponent: () => import('./paginas/login/login.component')
+            },{
                 path: '',
                 redirectTo: 'inicio',
                 pathMatch: 'full'

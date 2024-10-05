@@ -1,7 +1,7 @@
 header {
     background-color: #0073e6;
     color: white;
-    padding: 10px 80px;
+    padding: 13px 80px;
     display: flex;
     justify-content: space-between;
 }
@@ -22,7 +22,10 @@ header h1:hover {
     transform: translateX(2px);
 }
 header h3 {
-    font-size: 1.3em;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
     color: black;
     padding-top: 7px;
 }
@@ -38,4 +41,5 @@ header img {
 button.btn {
     padding: 10px 30px;
     transition: ease-out 300ms;
+    font-weight: 500;
 }

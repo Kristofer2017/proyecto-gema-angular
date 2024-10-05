@@ -1,8 +1,36 @@
 footer {
     text-align: center;
     background-color: #0073e6;
-    color: black;
-    padding: 10px 0;
-    width: 100%;
+    color: white;
     font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem;
+}
+
+.contenedor-enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.red-social a {
+    text-decoration: none;
+    background: white;
+    color: #0073e6;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.red-social i {
+    font-size: 1.7em;
+}
+
+.red-social a:hover {
+    transform: scale(1.1);
 }
