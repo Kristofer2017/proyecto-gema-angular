@@ -1,0 +1,41 @@
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 
+        2px 2px 0 rgba(0, 0, 0, 0.7),
+        4px 4px 0 rgba(0, 0, 0, 0.5),
+        6px 6px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+header h1:hover {
+    cursor: pointer;
+    transform: translateX(2px);
+}
+header h3 {
+    font-size: 1.3em;
+    color: black;
+    padding-top: 7px;
+}
+header img {
+    width: 150px;
+}
+.empresa, .opciones {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+button.btn {
+    padding: 10px 30px;
+    transition: ease-out 300ms;
+}
