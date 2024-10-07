@@ -37,7 +37,7 @@ button.btn-amarillo:active {
     transform: scale(0.95);
 }
 
-/* Enlace subrayado */ 
+/* Boton de enlace subrayado */ 
 button.subrayado {
     font-size: 18px;
     color: #313131;

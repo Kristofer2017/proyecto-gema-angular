@@ -37,4 +37,5 @@ li ul {
 
 .submenu:hover ul {
     display: block;
+    z-index: 100;
 }
