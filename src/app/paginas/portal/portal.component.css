@@ -1,0 +1,69 @@
+.contenedor-portal {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 300px 1fr 200px;
+}
+
+.panel-izquierdo, .panel-derecho {
+    background-color: rgba(190, 194, 196, 0.226);
+    padding: 1em;
+}
+
+.panel-izquierdo h3, .panel-derecho h3 {
+    font-size: 19px;
+}
+
+.contenido-principal {
+    padding: 2em;
+    border-width: 0 5px;
+    border-style: ridge;
+}
+
+.card {
+    margin-bottom: 20px; /* Más espacio entre las tarjetas */
+    border: none; /* Sin bordes visibles */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar relieve */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.card-header {
+    background-color: #f44336; /* Color del encabezado */
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: #ffffff;
+    color: #333;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-text {
+    color: #555;
+}
+
+a.card-link {
+    color: #007bff;
+    font-weight: bold;
+}
+
+a.card-link:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.6; /* Mejorar legibilidad del texto */
+}
+
+.mb-3 {
+    margin:auto ; /* Ajustar márgenes para espaciado más limpio */
+}
