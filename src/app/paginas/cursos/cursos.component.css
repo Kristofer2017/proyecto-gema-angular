@@ -1,67 +1,62 @@
-main {
-    display: flex;
-    flex-direction: row;
-    min-height: 73vh;
+.pagina-layout {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 17rem 1fr;
 }
+
 /* Panel de categorias */
-.panel-lateral {
-    width: 50%;
-    background-color: rgba(190, 194, 196, 0.226);
-    padding: 25px;
-    padding-right: 25px;
-    line-height: 1.3;
-}
-.panel-lateral li {
-    background-color: rgba(190, 194, 196, 0.377);
-    padding: 5px;
-    margin: 7px 0;
-    position: relative;
-    border-radius: 7px 7px 0 0;
-}
-.panel-lateral li:after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    content: '';
-    border-bottom: solid 3px rgba(112, 112, 112, 0.397);
-    height: 15px;
+.categorias {
     width: 100%;
-}
-.panel-lateral li:hover {
-    background-color: rgba(245, 245, 245, 0.712);
-}
-.panel-lateral ul {
-    list-style: none;
-    padding: 0;
-}
-.panel-lateral a {
-    text-decoration: none;
-    color: black;
-    
-}
-/* Encabezado de pagina de cursos */
-.parte-superior-cursos {
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 20px;
     display: flex;
-    width: 90%;
-    margin: auto;
+    flex-direction: column;
+}
+.categorias span {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+.element {
+    color: #5f5f5f;
+    font-size: .8em;
+    padding: 5px 15px;
+    border-left: 2px solid grey;
+    cursor: pointer;
+    margin-bottom: .7em;
+}
+.active {
+    background-color: #0073e6;
+    border-left: 0;
+    padding: 10px 15px;
+    color: white;
+}
+.element:hover:not(.active) {
+    color: #3775bb;
+}
+
+.contenido-principal {
+    padding: 1em 2.5em;
+    background-color: white;
+}
+
+/* Encabezados */
+.encabezado-cursos {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.parte-superior-cursos h1 {
-    font-size: 25px;
+    margin-bottom: 2em;
 }
 
 /* Barra de busqueda */
-.buscar {
+.busqueda {
+    display: flex;
+    align-items: center;
     position: relative;
-    padding: 5px;
-    margin-right: 100px;
-    margin-top: 8px;
 }
-.buscar input {
+.busqueda input {
     width: 0;
-    height: 40px;
+    height: 44px;
     padding: 0 20px;
     font-size: 18px;
     color: #222;
@@ -70,124 +65,143 @@ main {
     border-radius: 30px;
     transition: all 0.6s ease;
 }
-.searchbar{
-    font-size: 20px;
+.busqueda:hover .barra-busqueda {
+    width: 240px;
 }
 
-
-.btn {
-    width: 55px;
-    height: 50px;
-    line-height: 55px;
-    top: 0;
-    right: 0;
-    position: absolute;
+.icono-busqueda {
     background: #0073e6;
-    text-align: center;
-    color: white !important;
-    font-size: 18px;
+    color: white;
+    width: 52px;
+    height: 50px;
+    font-size: 1.3em;
     border-radius: 50%;
     cursor: pointer;
-}
-.btn i{
     display: flex;
-    padding-top: 8px;
-    padding-left: 4px;
-}
-.buscar:hover input {
-    width: 240px;
-}
-.buscar input:focus {
-    width: 240px;
-}
-/* Contenedor de cursos */
-.contenedor-cursos {
-    display: flex;
-    width: 92%;
-    margin: auto;
-    gap: 30px;
-    margin-top: 30px;
-    justify-content: space-between;
-    align-items: stretch !important;
-}
-.contenedor-cursos > * {
-    flex: 1;
-}
-.curso {
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.082);
-    transition: none 30ms;
-    padding-top: 15px;
-}
-.curso:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.170);
-    cursor: pointer;
-}
-.curso.mas-cursos {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -3px;
+    right: 0;
 }
-.curso.mas-cursos h2 {
-    font-size: 30px;
-}
-.curso.mas-cursos i {
-    font-size: 50px;
-}
-.curso:hover {
-    transform: scale(1.01);
-}
-.curso img {
-    width: 100%;
-    height: 170px;
-    margin-top: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.199);
-}
-.opciones-cursos {
-    margin-top: 15px;
-    color: white;
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
+.contenedor-cursos section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.aniadir-carrito {
-    display: flex;
+.curso {
+    max-width: 300px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.07);
+    
+}
+
+.curso a {
+    text-decoration: none
+}
+
+.content {
+    padding: 1.1rem;
+}
+
+.image {
+    object-fit: cover;
     width: 100%;
+    height: 150px;
+    background-color: rgb(239, 205, 255);
+}
+
+.title {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+.desc {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.action span {
+    transition: .3s ease;
+}
+
+.action:hover span {
+    transform: translateX(4px);
+}
+
+
+
+.buy-button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #0459ad; /*oscuro*/
+    background-color: #0073e6; /*el mas claro*/
+    overflow: hidden;
+    
+}
+
+.buy-button, .button-icon, .button-text {
+    transition: all 0.3s;
+}
+
+.buy-button .button-text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+}
+
+.buy-button .button-icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #0459ad; /*oscuro*/
+    color: #fff;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.texto h3 {
-    font-size: 23px !important;
+
+.buy-button:hover {
+    background: #0459ad; /*oscuro*/
 }
-.aniadir-carrito, .favorito {
-    background-color: #5281e6;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    
+
+.buy-button:hover .button-text {
+    color: transparent;
 }
-.aniadir-carrito:hover,
-.favorito:hover {
-    transform: scale(1.03);
-    background-color: #3671e0;
-    cursor: pointer;
+
+.buy-button:hover .button-icon {
+    width: 148px;
+    transform: translateX(0);
 }
-.opciones-cursos .icono i {
-    display: inline-block;
-    font-size: 27px;
-    padding: 15px;
-    
+
+.buy-button:active .button-icon {
+    background-color: #06498b; /*los mas oscuros*/
 }
-.opciones-cursos {
-    display: flex;
-    align-items: center;
-}
-.opciones-cursos .aniadir-carrito .icono i {
-    padding-right: 0;
+
+.buy-button:active {
+    border: 1px solid #06498b;  /*los mas oscuros*/
 }

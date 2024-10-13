@@ -1,76 +1,110 @@
-<main>
+<div class="pagina-layout">
     <div class="panel-lateral">
-        <h3>Categrías</h3>
-        <ul>
-            <li><a href="#">Programación Básica</a></li>
-            <li><a href="#">Introducción al Inglés</a></li>
-            <li><a href="#">Electrónica para Principiantes</a></li>
-            <li><a href="#">Matemáticas para Ciencias de la Computación</a></li>
-            <li><a href="#">Diseño Gráfico</a></li>
-            <li><a href="#">Marketing Digital</a></li>
-            <li><a href="#">Historia de la Informática</a></li>
-            <li><a href="#">Robótica Avanzada</a></li>
-            <li><a href="#">Fotografía Digital</a></li>
-            <li><a href="#">Análisis de Datos</a></li>
-            <li><a href="#">Desarrollo Web</a></li>
-            <li><a href="#">Inteligencia Artificial</a></li>
-            <li><a href="#">Gestión de Proyectos</a></li>
-            <li><a href="#">Técnicas de Presentación</a></li>
-            <li><a href="#">Preparación para Exámenes</a></li>
-        </ul>
+        <div class="categorias">
+            <span>Categorías</span>
+            <div class="card__container">
+                <p class="element active">Programación Básica</p> 
+                <p class="element">Introducción al Inglés</p> 
+                <p class="element">Electrónica para Principiantes</p> 
+                <p class="element">Matemáticas para Ciencias de la Computación</p> 
+                <p class="element">Diseño Gráfico</p> 
+                <p class="element">Marketing Digital</p>
+                <p class="element">Robótica Avanzada</p>
+                <p class="element">Análisis de Datos</p>
+                <p class="element">Inteligencia Artificial</p>
+                <p class="element">Gestión de Proyectos</p>
+            </div>
+          </div>
     </div>
-    <div class="secciones">
-        <div class="parte-superior-cursos">
-            <h1>Programación Básica</h1>
-            <div class="buscar">
-                <input type="text" placeholder="Buscar"/>
 
-                <div class="btn">
-                    <i class="fas fa-search icon searchbar"></i>
-                </div>
+    <div class="contenido-principal">
+
+        <!-- Encabezados -->
+        <div class="encabezado-cursos">
+            <h1>Hola, bienvenido a nuestros cursos</h1>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar" class="barra-busqueda"/>
+                <i class="fas fa-search icono-busqueda"></i>
             </div>
         </div>
-        <hr>
+
+        <!-- Cursos -->
         <div class="contenedor-cursos">
-            <div class="curso">
-                <h1>Curso 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <img src="/cursos/java.png">
-                
-                <div class="opciones-cursos">
-                    <div class="aniadir-carrito">
-                        <div class="texto">
-                            <h3>Agregar al carrito</h3>
-                        </div>
-                        <div class="icono">
-                            <i class='bx bx-cart-alt' ></i>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-            <div class="curso">
-                <h1>Curso 2</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <img src="/cursos/csharp.jpg">
+            <section id="programacion">
+                <!-- Curso C# -->
+                <div class="curso">
+                    <img class="image" src="/cursos/csharp.jpg">
 
-                <div class="opciones-cursos">
-                    <div class="aniadir-carrito">
-                        <div class="texto">
-                            <h3>Agregar al carrito</h3>
-                        </div>
-                        <div class="icono">
-                            <i class='bx bx-cart-alt' ></i>
-                        </div>
+                    <div class="content">
+                        <a href="#">
+                            <span class="title">
+                                C# Curso Completo para ser programador .NET.
+                            </span>
+                        </a>
+
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                            dolores, possimus pariatur animi temporibus nesciunt praesentium 
+                        </p>
+
+                        
+                        <button class="buy-button">
+                            <span class="button-text">Comprar</span>
+                            <fa-icon class="button-icon" [icon]="iconoCarrito"></fa-icon>
+                        </button>
                     </div>
-                    
                 </div>
-            </div>
-            <div class="curso mas-cursos">
-                <h2>Mas cursos</h2>
-                <i class='bx bx-plus-circle' ></i>
-            </div>
+
+                <!-- Curso JAVA -->
+                <div class="curso">
+                    <img class="image" src="/cursos/java.png">
+
+                    <div class="content">
+                        <a href="#">
+                            <span class="title">
+                                Programación de Android desde cero con Java.
+                            </span>
+                        </a>
+
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                            dolores, possimus pariatur animi temporibus nesciunt praesentium 
+                        </p>
+
+                        
+                        <button class="buy-button">
+                            <span class="button-text">Comprar</span>
+                            <fa-icon class="button-icon" [icon]="iconoCarrito"></fa-icon>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Curso Phyton -->
+                <div class="curso">
+                    <img class="image" src="/cursos/python.jpg">
+
+                    <div class="content">
+                        <a href="#">
+                            <span class="title">
+                                Aprender Python 3, Django, Flask y Tkinter.
+                            </span>
+                        </a>
+
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                            dolores, possimus pariatur animi temporibus nesciunt praesentium 
+                        </p>
+
+                        
+                        <button class="buy-button">
+                            <span class="button-text">Comprar</span>
+                            <fa-icon class="button-icon" [icon]="iconoCarrito"></fa-icon>
+                        </button>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-</main>
+</div>
+
+
