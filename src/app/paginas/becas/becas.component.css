@@ -1,40 +1,57 @@
-
-.requisito-item {
-    margin-bottom: 20px;
+.contenedor-requisitos {
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    margin: 3rem 0 4rem;
 }
-
-.subtitle {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 3vh;
-}
-
-#requisitos .col-md-8 {
+.card {
+    position: relative;
+    width: 340px; /* Hacemos las cards más anchas */
+    height: auto; /* Para permitir que el contenido se ajuste */
+    background-color: #f4f4f4; /* Un tono claro para el fondo de la card */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    font-size: 2.5vh;
+    justify-content: center; 
+    padding: 20px;
+    gap: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-#requisitos .col-md-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-#requisitos img {
-    max-width: 400px;
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 230px;
     height: auto;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #7b8794, #444b55); /* Un degradado moderno */
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
-
-h1, h2 {
-    font-weight: bold;
+.card:hover::before {
+    transform: rotate(-6deg) scale(1.1);
+    
 }
-
-
+.heading {
+    font-size: 3.1vh;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #333;
+}
+.texto {
+    color: #555;
+    font-size: 2.5vh;
+    text-align: left;
+}
+.card:hover {
+    background-color: #ffffff; /* Un efecto sutil al hacer hover */
+}
 
 .btn-lg {
     padding: 15px 30px;
@@ -55,8 +72,8 @@ h1, h2 {
 .form {
     background-color: #fff;
     display: block;
-    padding: 1rem;
-    max-width: 1000px; /* Un poco más ancho */
+    padding: 3rem;
+    width: 80%;
     border-radius: 0.5rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     margin: auto;
@@ -73,6 +90,7 @@ h1, h2 {
 .input-container {
     position: relative;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .input-container label {
@@ -110,13 +128,81 @@ h1, h2 {
     border-radius: 0.25rem;
 }
 
+/* Boton subir archivos */
+.upload-btn {
+    --bg: linear-gradient(180deg,
+              hsla(0, 0%, 100%, .1),
+              hsla(0, 0%, 100%, 0)),
+          hsl(128, 52%, 45%);
+    box-shadow: 0 1px 2px #25114f66, 0 0 0 1px hsla(128, 50%, 45%, 0.761);
+    background-color: transparent;
+    border: none;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .25rem .5rem;
+    cursor: pointer;
+    padding-right: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--bg);
+    white-space: nowrap;
+    border-radius: 6px;
+    border: 1px solid #fff3;
+    margin: auto;
+    margin-bottom: 2em;
+}
+.custum-file-upload {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #cacaca;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
+    margin: auto;
+  }
+  
+  .custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .icon svg {
+    height: 80px;
+    fill: rgba(75, 85, 99, 1);
+  }
+  
+  .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .text span {
+    font-weight: 400;
+    color: rgba(75, 85, 99, 1);
+  }
+  
+  .custum-file-upload input {
+    display: none;
+  }
+
+
 .submit{
     display: block;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    background-color: #4F46E5;
+    padding: 1.3em;
+    background-color: #0073e6;
+    border: none;
     color: #ffffff;
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -124,6 +210,7 @@ h1, h2 {
     width: 100%;
     border-radius: 0.5rem;
     text-transform: uppercase;
+    margin-top: 3em;
   }
 
 .signup-link {

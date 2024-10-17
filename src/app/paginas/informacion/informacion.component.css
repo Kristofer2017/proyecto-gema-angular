@@ -141,6 +141,8 @@
 
 .card img {
     padding: 3rem;
+    width: 12em;
+    margin: auto;
 }
 .card-body p {
     font-size: 18px;

@@ -35,8 +35,9 @@
     color: #3775bb;
 }
 
+/* Contenido principal de cursos */
 .contenido-principal {
-    padding: 1em 2.5em;
+    padding: 1em 4em 3em 2.5em;
     background-color: white;
 }
 
@@ -68,7 +69,6 @@
 .busqueda:hover .barra-busqueda {
     width: 240px;
 }
-
 .icono-busqueda {
     background: #0073e6;
     color: white;
@@ -87,80 +87,85 @@
 .contenedor-cursos section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
 }
-
+/* Tarjeta Curso */
 .curso {
-    max-width: 300px;
+    width: 100%;
     border-radius: 0.5rem;
     background-color: #fff;
     box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.07);
-    
 }
-
 .curso a {
     text-decoration: none
 }
-
 .content {
     padding: 1.1rem;
 }
-
 .image {
     object-fit: cover;
     width: 100%;
     height: 150px;
     background-color: rgb(239, 205, 255);
 }
-
 .title {
     color: #111827;
-    font-size: 1.125rem;
+    font-size: 1.4rem;
     line-height: 1.75rem;
     font-weight: 600;
 }
-
 .desc {
     margin-top: 0.5rem;
     color: #6B7280;
-    font-size: 0.875rem;
+    font-size: .9rem;
     line-height: 1.25rem;
 }
 
-.action {
-    display: inline-flex;
-    margin-top: 1rem;
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
+/* Features */
+.features {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 1.2rem 0 1.4rem;
+}
+.features li {
+    display: flex;
     align-items: center;
-    gap: 0.25rem;
-    background-color: #2563EB;
-    padding: 4px 8px;
-    border-radius: 4px;
+    gap: 0.5rem;
+}
+.features li + * {
+    margin-top: 0.75rem;
+}
+.features .icon {
+    background-color: #16d3a4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.features .icon i {
+    width: 14px;
+    height: 14px;
+}
+.features + * {
+    margin-top: 1.25rem;
 }
 
-.action span {
-    transition: .3s ease;
-}
-
-.action:hover span {
-    transform: translateX(4px);
-}
-
-
-
+/* Boton comprar */
 .buy-button {
     position: relative;
-    width: 150px;
-    height: 40px;
+    width: 180px;
+    height: 50px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    border: 1px solid #0459ad; /*oscuro*/
-    background-color: #0073e6; /*el mas claro*/
+    border: 1px solid #0459ad;
+    background-color: #0073e6;
     overflow: hidden;
-    
+    font-size: 18px;
 }
 
 .buy-button, .button-icon, .button-text {
@@ -168,17 +173,17 @@
 }
 
 .buy-button .button-text {
-    transform: translateX(22px);
+    transform: translateX(25px);
     color: #fff;
     font-weight: 600;
 }
 
 .buy-button .button-icon {
     position: absolute;
-    transform: translateX(109px);
+    transform: translateX(129px);
     height: 100%;
-    width: 39px;
-    background-color: #0459ad; /*oscuro*/
+    width: 50px;
+    background-color: #0459ad;
     color: #fff;
     display: flex;
     align-items: center;
@@ -186,22 +191,19 @@
 }
 
 .buy-button:hover {
-    background: #0459ad; /*oscuro*/
+    background: #0459ad;
 }
-
 .buy-button:hover .button-text {
     color: transparent;
 }
 
 .buy-button:hover .button-icon {
-    width: 148px;
+    width: 178px;
     transform: translateX(0);
 }
-
 .buy-button:active .button-icon {
-    background-color: #06498b; /*los mas oscuros*/
+    background-color: #06498b;
 }
-
 .buy-button:active {
-    border: 1px solid #06498b;  /*los mas oscuros*/
+    border: 1px solid #06498b;
 }
