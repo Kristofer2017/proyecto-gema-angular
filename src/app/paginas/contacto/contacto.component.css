@@ -1,170 +1,202 @@
-
+/* Estilos para el formulario */
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    position: relative;
-    width: 40em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.flex {
-    display: flex;
-    
-    gap: 6px;
-}
-.form .flex label .input {
-    width: 18.5em;
-}
-.form label {
-    position: relative;
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.form label .input {
+.form-control {
     width: 100%;
-    padding: 10px 10px 20px 10px;
-    outline: 0;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-.input01 {
+textarea.form-control {
     resize: none;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+.btn {
     width: 100%;
-    padding: 10px 10px 20px 10px;
-    outline: 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-span {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    transition: all 0.3s ease;
-    font-size: 16px;
-    color: #999;
-}
-
-.input:focus + span,
-.input:not(:placeholder-shown) + span,
-.input01:focus + span,
-.input01:not(:placeholder-shown) + span {
-    top: -10px;
-    left: 10px;
+    font-weight: 500;
+    font-size: 25px;
+    height: 50px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .btn span {
     font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+  }
+  
+  .btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn:hover .btn-text-one {
+    top: -100%;
+  }
+  
+  .btn:hover .btn-text-two {
+    top: 50%;
+  }
+
+/* Sección de contacto adicional */
+.seccion-contacto {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
     color: #007bff;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 17px;
-    font-size: 19px;
-    font-weight: 500;
-}
-
-.img {
-    background-image: url('https://images.unsplash.com/photo-1542744095-29573d7672d5');
-    height: 200px;
-    background-size: cover;
+/* Estilos para la sección de contacto moderna */
+.seccion-contacto-moderno {
+    background-color: #f7f7f7;
+    padding: 20px;
     border-radius: 10px;
 }
 
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-
-  /* From Uiverse.io by Praashoo7 */ 
-  .card {
-    background-color: #fff; 
-    border-radius: 10px; 
-    padding: 20px;
-    text-align: center;
-    width: 23em; 
-    height: 24em; 
-    transition: 1s ease-in-out; 
+.contact-item {
     display: flex;
-    flex-direction: column;
-    margin-top: 5px;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-
-.card .info {
-    font-weight: 400;
-    color: #555; 
-    display: block;
-    text-align: center;
-    font-size: 15px;
-    margin: 1em;
+.contact-item .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
 }
 
-.card .img {
-    height: 5.8em;
-    background: #ECF0F1;
-    border-radius: 15px;
-    margin: auto;
+.contact-item .info {
+    flex: 1;
 }
 
-.card .share {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-}
-
-.card a {
-    color: #007bff; 
-    transition: .4s ease-in-out;
-}
-
-
-.card button {
-    padding: 0.8em 1.7em;
-    display: block;
-    margin: auto;
-    border-radius: 25px;
-    border: none;
+.contact-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
     font-weight: bold;
-    background: #007bff; 
-    color: #FFFFFF; 
-    transition: .4s ease-in-out;
 }
 
-.card button:hover {
-    background-color: #0b5ed7;
+.contact-item p {
+    font-size: 16px;
+    margin: 0;
 }
 
-
-
-section {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 4em;
+.contact-item a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #130f0f;
 }
 
-.card {
-    height: 100%;
+.menu__link {
+    line-height: 2;
+    position: relative;
+}
+  
+.menu__link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #0a0606;
+    position: absolute;
+    bottom: -.25rem;
+    left: 0;
+    transition: width .4s;
+}
+  
+.menu__link:hover::before {
+    width: 100%;
 }
 
-.servicio-cliente p {
-    display: inline-block !important;
-    padding: 10px 0 5px 15px;
-
-    font-weight: bold;
-    color: #007bff; 
-    text-align: center;
-    font-size: 1em;
-}
-.servicio-cliente {
-    display: flex !important;
-    justify-content: center;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Estilos para las casillas de verificación en filas */
+/* Estilos para la disposición de los checkboxes en una columna */
+.form-check {
+    margin-bottom: 10px;
+}
+
+/* Organiza en una columna con tres elementos arriba y dos abajo */
+.seccion-formulario .form-check:nth-child(-n+3) {
+    display: inline-block;
+    width:50%;
+}
+
+.seccion-formulario .form-check:nth-child(n+4) {
+    display: inline-block;
+    width: 50%;
+}

@@ -1,50 +1,103 @@
 <main class="container my-5">
     <section id="contacto" class="row">
-        <h2 class="text-center mb-4">Contactanos</h2>
+        <h2 class="text-center mb-4">Contáctanos</h2>
         <div class="col-md-6 seccion-formulario">
             <form class="form">
-                <div class="flex">
-                    <label>
-                        <input required placeholder=" " type="text" class="input">
-                        <span>Nombre</span>
-                    </label>
-                    <label>
-                        <input required placeholder=" " type="text" class="input">
-                        <span>Apellido</span>
-                    </label>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Nombre" required>
+                    </div>
+                    <div class="col">
+                        <label for="lastName" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Apellido" required>
+                    </div>
                 </div>
 
-                <label>
-                    <input required placeholder=" " type="email" class="input">
-                    <span>Email</span>
-                </label>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required>
+                </div>
 
-                <label>
-                    <input required type="tel" placeholder=" " class="input">
-                    <span>Número de contacto</span>
-                </label>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Número de teléfono</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="####-####" required>
+                </div>
 
-                <label>
-                    <textarea required rows="3" placeholder=" " class="input01"></textarea>
-                    <span>Mensaje</span>
-                </label>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
 
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <div class="mb-3">
+                    <h4>Razón</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="service1" value="Acerca de Becas o Problemas">
+                        <label class="form-check-label" for="service1">Acerca de Becas o Problemas</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="service2" value="Problemas de Registro">
+                        <label class="form-check-label" for="service2">Problemas de Registro</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="service3" value="Problemas con Afiliación">
+                        <label class="form-check-label" for="service3">Problemas con Afiliación</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="service4" value="Pregunta por Informacion">
+                        <label class="form-check-label" for="service4">Pregunta por Informacion</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="service5" value="Otros">
+                        <label class="form-check-label" for="service5">Otros</label>
+                    </div>
+                </div>
+
+                <button class="btn" type="submit">
+                    <span class="btn-text-one">Enviar</span>
+                    <span class="btn-text-two">Mensaje Enviado!</span>
+                </button>
             </form>
         </div>
+        
+        <div class="col-md-6 seccion-contacto-moderno">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="/iconos/bubble-chat.png" alt="Icono de ubicación" class="icon">
+                    <div class="info">
+                        <h4>Chatea con nosotros</h4>
+                        <p>Nuestro equipo de Facebook está aquí para ayudarte</p>
+                        <a class="menu__link" href="https://www.facebook.com/">F.Proyecto Gema</a>
+                    </div>
+                </div>
 
-        <div class="col-md-3">
-            <div class="card text-center">
-              <img src="/requisitos/walter.jpg" class="img">
-              <div class="servicio-cliente d-flex">
-                  <p>Servicio Al Cliente</p>
-              </div>
-              <p class="info">Soy Walter, un profesional dedicado al servicio al cliente. Mi objetivo es brindar
-                soluciones efectivas y personalizadas.</p>
-              <div class="share">
-              </div>
-              <button class="btn btn-secondary">Contactar</button>
+                <div class="contact-item">
+                    <img src="/iconos/location.png" alt="Icono de ubicación" class="icon">
+                    <div class="info">
+                        <h4>Visítanos</h4>
+                        <p>Ven a saludarnos a nuestra oficina central.</p>
+                        <p>
+                            Carretera de San Salvador a Sonsonate, Km 24 1/2 #3-3
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <img src="/iconos/phone-call.png" alt="Icono de teléfono" class="icon">
+                    <div class="info">
+                        <h4>Llámanos</h4>
+                        <p>Puedes llamarnos a cualquier hora de la semana</p>
+                        <a class="menu__link" href="#">+503 9021-7843</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <img src="/iconos/email.png" alt="Icono de teléfono" class="icon">
+                    <div class="info">
+                        <h4>Envianos Un Correo</h4>
+                        <p>Contacta nuestro Equipo Tecnico desde Gmail.</p>
+                        <a class="menu__link" href="#">proyectogema&#64;hotmail.com</a>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
     </section>
 </main>
