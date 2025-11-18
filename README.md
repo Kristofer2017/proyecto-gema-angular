@@ -1,4 +1,4 @@
-# ProyectoGemaAngular
+# Proyecto Gema (Angular)
 
 Sample project: Innovative learning platform designed to train young talents in various areas, such as English, computer science and electronics.
 
