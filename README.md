@@ -1,27 +1,8 @@
 # ProyectoGemaAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+Sample project: Innovative learning platform designed to train young talents in various areas, such as English, computer science and electronics.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<img width="1319" height="932" alt="Captura de pantalla 2025-11-18 112047" src="https://github.com/user-attachments/assets/acd86ff3-c706-4bc2-9112-f05e9505c297" />
+<img width="1309" height="929" alt="Captura de pantalla 2025-11-18 112130" src="https://github.com/user-attachments/assets/39b27185-d4f6-4885-9c88-04d05f4f10e3" />
+<img width="1309" height="935" alt="Captura de pantalla 2025-11-18 112202" src="https://github.com/user-attachments/assets/a0df0610-f839-48a8-8fcb-073d3dda5c8b" />
+<img width="1313" height="781" alt="Captura de pantalla 2025-11-18 112234" src="https://github.com/user-attachments/assets/9cdd2343-dff5-4fa6-bb18-d02ae593f324" />
