@@ -97,16 +97,17 @@
 .contenido-principal {
     background-color: white;
     text-align: center;
-    padding: 2rem;
+    padding: 6dvh 2rem 8dvh;
 }
 .contenido-principal h1 {
     font-size: 3rem;
-    margin-bottom: 30px;
+    margin-bottom: 4dvh;
 }
 .contenido-principal p {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 3rem;
+    padding: 0 1em;
+    margin-bottom: 5dvh;
 }
 .botones-principales {
     display: flex;
@@ -151,7 +152,7 @@
     cursor: pointer;
     background-color: #0073e6;
     color: white;
-    padding: 12px 25px;
+    padding: 11px 25px;
     border-radius: 100px;
     font-size: 18px;
     font-weight: 700;
@@ -178,7 +179,7 @@
 
 /* Carrusel */
 .carousel {
-    margin: 3em 0 1.2em;
+    margin-top: 12dvh;
 }
 
 .flecha-carrusel {

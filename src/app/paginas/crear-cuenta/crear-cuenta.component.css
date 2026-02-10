@@ -1,15 +1,15 @@
 .contendor-formulario {
    display: flex;
    justify-content: center;
-   margin-top: 2em;
+   margin: 2em;
 }
 .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 450px;
+    width: 40em;
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 20px;
     position: relative;
   }
@@ -66,8 +66,10 @@
   
   .flex {
     display: flex;
-    width: 100%;
     gap: 6px;
+  }
+  .flex label input.input {
+    width: 17.9em;
   }
   
   .form label {

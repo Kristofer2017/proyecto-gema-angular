@@ -34,15 +34,20 @@ export const routes: Routes = [
                 path: 'portal',
                 loadComponent: () => import('./paginas/portal/portal.component')
             },{
+                path: 'registro',
+                loadComponent: () => import('./paginas/crear-cuenta/crear-cuenta.component')
+            },{
                 path: '',
                 redirectTo: 'inicio',
                 pathMatch: 'full'
             }
         ]
-    },{
-        path: 'registro',
-        loadComponent: () => import('./paginas/crear-cuenta/crear-cuenta.component')
-    },{
+    }
+    // ,{
+    //     path: 'registro',
+    //     loadComponent: () => import('./paginas/crear-cuenta/crear-cuenta.component')
+    // }
+    ,{
         // En caso de que el usuario escriba una direccion invalida
         path: '**',
         redirectTo: 'inicio'

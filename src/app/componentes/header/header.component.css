@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Bree+Serif&family=Hi+Melody&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
 header {
     background-color: #0073e6;
     color: white;
-    padding: 13px 80px;
+    padding: 8px 80px 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+header img {
+    width: 180px;
+    cursor: pointer;
+}
+.nombre {
+    text-align: center;
 }
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-weight: bold;
     letter-spacing: 2px;
     color: #fff;
@@ -19,20 +29,19 @@ header h1 {
 }
 header h1:hover {
     cursor: pointer;
-    transform: translateX(2px);
+    transform: translateY(-2px);
 }
 header h3 {
-    text-transform: uppercase;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
-    font-size: 1em;
-    font-weight: bold;
     color: black;
     padding-top: 7px;
+    font-size: 1.1em;
+    font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
 }
-header img {
-    width: 150px;
-}
-.empresa, .opciones {
+
+.opciones {
     display: flex;
     gap: 1.5rem;
     align-items: center;

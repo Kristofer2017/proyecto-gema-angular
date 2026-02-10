@@ -40,7 +40,6 @@
 }
 .heading {
     font-size: 3.1vh;
-    text-transform: capitalize;
     font-weight: 700;
     color: #333;
 }
@@ -211,7 +210,12 @@
     border-radius: 0.5rem;
     text-transform: uppercase;
     margin-top: 3em;
-  }
+    transition: 500ms ease-in-out;
+}
+
+.submit:hover {
+    transform: scale(1.04);
+}
 
 .signup-link {
     color: #6B7280; 

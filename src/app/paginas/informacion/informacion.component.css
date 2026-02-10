@@ -127,6 +127,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
+    margin: auto;
     margin-bottom: 5em;
 }
 
